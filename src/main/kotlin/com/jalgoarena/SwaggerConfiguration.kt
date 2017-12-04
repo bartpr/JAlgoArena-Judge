@@ -8,8 +8,6 @@ import springfox.documentation.spi.DocumentationType
 import springfox.documentation.spring.web.plugins.Docket
 import springfox.documentation.swagger2.annotations.EnableSwagger2
 
-// tutorial from mrdium.com https://medium.com/@guyheylens/adding-swagger-to-your-spring-rest-api-written-in-kotlin-aa6d29d58a21
-
 @Configuration
 @EnableSwagger2
 open class SwaggerConfiguration {
@@ -20,4 +18,6 @@ open class SwaggerConfiguration {
 	    .apis(RequestHandlerSelectors.any())
 	    .paths(PathSelectors.any())
 	    .build()
-} 
+}
+
+// tutorial from mrdium.com https://medium.com/@guyheylens/adding-swagger-to-your-spring-rest-api-written-in-kotlin-aa6d29d58a21 (Retrieved December 1, 2017)
